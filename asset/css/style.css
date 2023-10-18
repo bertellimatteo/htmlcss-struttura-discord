@@ -1,0 +1,174 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* #region debug */
+
+/* header */
+.debug header{
+  background-color: #add8e6;
+}
+
+.debug .navigation-list{
+  background-color: #daa520;
+}
+
+.debug .nav-items-right, .nav-items-center, .nav-items-left{
+  border: 1px black dashed;
+}
+
+/* end header */
+
+/* start main  */
+
+.debug main .container-title .title{
+  background-color: #ee82ee;
+}
+
+.debug main .container-article{
+  background-color: white;
+}
+
+main .container-article .article:nth-of-type(even){
+  background-color: #d3d3d3;
+}
+
+.debug main .container-article article .space-text{
+  background: #1e90ff;
+  border: 1px black dashed;
+}
+
+.debug main .container-article article .space-image{
+  background-color: #ffc0cb;
+  border: 1px black dashed;
+}
+
+.debug main .container-article .big-article .space{
+  background-color: #228b22;
+  border: 1px black dashed;
+}
+
+.container-title{
+  background-color: #00008b;
+}
+
+/* end main  */
+
+
+
+
+
+
+/* #endregion debug */
+
+
+/* #region header */
+
+header{
+ width: 100%;
+}
+
+.container-nav{
+  padding: 1rem 15%;
+}
+
+.container-nav .navigation-list{
+  display: flex;
+}
+
+.container-nav .navigation-list .nav-items-left{
+  width: 15%;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.container-nav .navigation-list .nav-items-center{
+  width: 70%;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.container-nav .navigation-list .nav-items-right{
+  width: 15%;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+/* #endregion header */
+
+/* #region main */
+
+main{
+  width: 100%;
+}
+
+/* #region title */
+main .container-title{
+  padding: 3rem 20%;
+}
+
+main .container-title .title{
+  height: 300px;
+}
+/* #endregion title  */
+
+/* #region articole */
+main .container-article{
+}
+
+main .container-article .article{
+  height: 400px;
+  display: flex;
+  margin: 3rem 20%;
+}
+
+main .container-article .article:nth-of-type(even){
+  /* used for change the background color  */
+}
+
+main .container-article .article .space-text{
+  width: 60%;
+  height: 100%;
+  display: flex;
+}
+
+main .container-article .article .space-image{
+  width: 40%;
+  height: 100%;
+  display: flex;
+}
+
+main .container-article .big-article{
+ height: 500px;
+}
+
+main .container-article .big-article .space{
+  width: 100%;
+  height: 100%;
+}
+
+/* #endregion articole */
+
+/* #endregion main */
+
+/* #region footer */
+
+footer{
+  width: 100%;
+}
+
+
+/* #region footer */
