@@ -6,6 +6,7 @@
 
 a{
   text-decoration: none;
+  color: black;
 }
 
 /* #region debug */
@@ -31,8 +32,13 @@ a{
   background-color: #ee82ee;
 }
 
-.debug main .container-article{
+.debug main .container-article .article{
   background-color: white;
+  height: 400px;
+}
+
+.debug main .container-article .big-article{
+  height: 600px;
 }
 
 main .container-article .article:nth-of-type(even){
@@ -49,7 +55,7 @@ main .container-article .article:nth-of-type(even){
   border: 1px black dashed;
 }
 
-.debug main .container-article .big-article .space{
+.debug main .container-article .big-article .all-space{
   background-color: #228b22;
   border: 1px black dashed;
 }
@@ -60,7 +66,13 @@ main .container-article .article:nth-of-type(even){
 
 /* end main  */
 
+/* start footer  */
 
+footer .container{
+  background-color: #23272a;
+}
+
+/* end footer  */
 
 
 
@@ -117,7 +129,7 @@ main{
 
 /* #region title */
 main .container-title{
-  padding: 3rem 20%;
+  padding: 3rem 25%;
 }
 
 main .container-title .title{
@@ -127,35 +139,55 @@ main .container-title .title{
 
 /* #region articole */
 main .container-article{
+ 
 }
 
 main .container-article .article{
-  height: 400px;
-  display: flex;
-  margin: 3rem 20%;
+  padding: 3rem 15%;
 }
 
+main .container-article .article .grind-container{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+/* rotate article and items */
 main .container-article .article:nth-of-type(even){
   /* used for change the background color  */
 }
 
+main .container-article .article:nth-of-type(even) .grind-container{
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+main .container-article .article:nth-of-type(even) .grind-container .item-1{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+main .container-article .article:nth-of-type(even) .grind-container .item-2{
+ grid-column: 2 / 3;
+ grid-row: 1 / 2;
+
+}
+
+/* end rotate article and items */
+
 main .container-article .article .space-text{
-  width: 60%;
-  height: 100%;
-  display: flex;
+ 
 }
 
 main .container-article .article .space-image{
-  width: 40%;
-  height: 100%;
-  display: flex;
+  
 }
 
 main .container-article .big-article{
- height: 500px;
+ padding: 3rem 20%;
 }
 
-main .container-article .big-article .space{
+main .container-article .big-article .all-space{
   width: 100%;
   height: 100%;
 }
@@ -170,5 +202,11 @@ footer{
   width: 100%;
 }
 
+footer .container{
+  padding: o,25rem 15% 0 15%;
+}
+
+
 
 /* #region footer */
+
